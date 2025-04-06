@@ -1,29 +1,45 @@
-
+/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
-
 header {
     background-color: #f0f0f0;
-}
-
-nav {
-    background-color: #d3d3d3;
-}
-
-main {
-    background-color: #e6f7fa;
-    font-size: 18px;
 }
 
 footer {
     background-color: #f5f5dc;
 }
 
-li {
-    display: block; 
-    width: 100%; 
+main {
+    background-color: #e6f7fa;
+    font-size: 18px;
+}
+nav {
+    display: inline-block;
+    width: 80%;
+    background-color: #d3d3d3;
+}
+nav img {
+    width: 10%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;   
+    align-items: start;       
+    row-gap: 1rem;            
+    column-gap: 1rem;          
+}
+
+.grid img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 h1 {
