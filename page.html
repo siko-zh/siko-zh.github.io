@@ -1,69 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The books I read</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The books I read</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="#main">Go to main content</a>
-  <main id="main">
-      <h1>Books read</h1>
-      <p>The last 3 books I read</p>
-      <ul>
-          <li>
-            <a href="https://www.litres.ru/book/aleksandr-bek/volokolamskoe-shosse-130798/chitat-onlayn/" target="_blank">
-              Volokolamskoye highway - Alexander Beck
-            </a>
-          </li>
-          <li>
-            <a href="https://www.litres.ru/book/dzhordzh-oruell/1984-67572948/" target="_blank">
-              1984 - George Orwell
-            </a>
-          </li>
-          <li>
-            <a href="https://www.litres.ru/book/erih-mariya-remark/na-zapadnom-fronte-bez-peremen-32878920/" target="_blank">
-              On the Western Front Without Change - Erich Maria Remarque
-            </a>
-          </li>
-      </ul>
-
-      <section>
-          <h2>Volokolamskoye highway - Alexander Beck</h2>
-          <p>
-            “Volokolamskoye highway” — novella by Alexander Beck, one of the central works in the writer’s oeuvre...
-          </p>
-          <img 
-            src="https://cdn.litres.ru/pub/c/cover_415/130798.webp" 
-            alt="Cover of the book “The Volokolamskoye Highway”"
-            height="400" 
-            width="300">
-      </section>
-
-      <section>
-          <h2>1984 - George Orwell</h2>
-          <p>
-            “1984” — George Orwell's anti-utopian novel, published in 1949...
-          </p>
-          <img 
-            src="https://cdn.litres.ru/pub/c/cover_415/67572948.webp" 
-            alt="The cover of the book “1984”" 
-            height="400"
-            width="300">
-      </section>
-
-      <section>
-          <h2>On the Western Front Without Change - Erich Maria Remarque</h2>
-          <p>
-            “On the Western Front Without Change” — a novel by Erich Maria Remarque, published in 1928...
-          </p>
-          <img 
-            src="https://cdn.litres.ru/pub/c/cover_415/32878920.webp" 
-            alt="The cover of the book “On the Western Front Without Change.”" 
-            height="400" 
-            width="300">
-      </section>
-  </main>
+    <nav>
+        <a href="page.html">Read Books</a>
+        <a href="want-to-read.html">Want to Read</a>
+        <a href="recommended.html">Recommended</a>
+    </nav>
+    <main id="main-content">
+        <h1>Books read</h1>
+        <p>The last 3 books I read</p>
+        <ul>
+            <li><a href="https://www.litres.ru/book/aleksandr-bek/volokolamskoe-shosse-130798/chitat-onlayn/" target="_blank">Volokolamskoye highway - Alexander Beck</a></li>
+            <li><a href="https://www.litres.ru/book/dzhordzh-oruell/1984-67572948/" target="_blank">1984 - George Orwell</a></li>
+            <li><a href="https://www.litres.ru/book/erih-mariya-remark/na-zapadnom-fronte-bez-peremen-32878920/" target="_blank"    >On the Western Front Without Change - Erich Maria Remarque</a></li>
+        </ul>
+        <div class="book-grid">
+            <section>
+                <h2>Volokolamskoye highway - Alexander Beck</h2>
+                <p>“Volokolamskoye highway” - a novella by Alexander Beck, one of the central works in the works of the writer. It was written in 1942-1944.</p>
+                <img class="book-image" src="https://cdn.litres.ru/pub/c/cover_415/130798.webp" alt="Cover of the book “The Volokolamskoye Highway”"
+                    height="400" width="300">
+            </section>
+            <section>
+                <h2>1984 - George Orwell</h2>
+                <p>«1984» — George Orwell's anti-utopian novel, published in 1949. The last and, according to the prevailing view, the most important work of the writer.</p>
+                <img class="book-image" src="https://cdn.litres.ru/pub/c/cover_415/67572948.webp" alt="The cover of the book “1984”" height="400"
+                    width="300">
+            </section>
+            <section>
+                <h2>On the Western Front Without Change - Erich Maria Remarque</h2>
+                <p>“On the Western Front Without Change” or ‘In the West Without Change’ is a novel by Erich Maria Remarque, published in a newspaper version in 1928 and a separate book in 1929. </p>
+                <img class="book-image" src="https://cdn.litres.ru/pub/c/cover_415/32878920.webp" alt="The cover of the book “On the Western Front Without Change.”" height="400" width="300">
+            </section>
+        </div>
+    </main>
 </body>
 </html>
+
+
