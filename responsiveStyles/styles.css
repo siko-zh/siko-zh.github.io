@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box {
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 772px) {
+    .box {
+        width: 45%; 
+        display: inline-block; 
+        margin-right: 2%; 
+        vertical-align: top; 
+    }
+
+    .box:last-child {
+        margin-right: 0;
+    }
+    img {
+        max-height: 30vh; 
+    }
+}
+
+@media screen and (min-width: 998px) {
+    .box {
+        width: 30%; 
+        display: inline-block;
+        margin-right: 2%;
+    }
+    .box:last-child {
+        margin-right: 0;
+    }
+}
