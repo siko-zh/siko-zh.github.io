@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Accessible Book Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initGallery()">
+    <h1>My Book Gallery</h1>
+    <div id="preview">Hover over or focus on a book below to display its cover here</div>
+    <div class="gallery">
+        <figure>
+            <img src="https://prodimage.images-bn.com/pimages/9780452262935_p0_v6_s600x595.jpg" width="200" height="300" alt="Cover of 1984 by George Orwell" class="preview" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+            <figcaption>1984</figcaption>
+        </figure>
+        <figure>
+            <img src="https://prodimage.images-bn.com/pimages/9780060935467_p0_v13_s600x595.jpg" width="200" height="300" alt="Cover of To Kill a Mockingbird by Harper Lee" class="preview" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+            <figcaption>To Kill a Mockingbird</figcaption>
+        </figure>
+        <figure>
+            <img src="https://prodimage.images-bn.com/pimages/9780743273565_p0_v17_s600x595.jpg" width="200" height="300" alt="Cover of The Great Gatsby by F. Scott Fitzgerald" class="preview" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+            <figcaption>The Great Gatsby</figcaption>
+        </figure>
+        <figure>
+            <img src="https://prodimage.images-bn.com/pimages/9780060850524_p0_v6_s600x595.jpg" width="200" height="300" alt="Cover of Brave New World by Aldous Huxley" class="preview" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+            <figcaption>Brave New World</figcaption>
+        </figure>
+        <figure>
+            <img src="https://prodimage.images-bn.com/pimages/9781451673319_p0_v13_s600x595.jpg" width="200" height="300" alt="Cover of Fahrenheit 451 by Ray Bradbury" class="preview" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+            <figcaption>Fahrenheit 451</figcaption>
+        </figure>
+        <figure>
+            <img src="https://prodimage.images-bn.com/pimages/9780547928227_p0_v4_s600x595.jpg" width="200" height="300" alt="Cover of The Hobbit by J.R.R. Tolkien" class="preview" 
+                 onmouseover="upDate(this)" onmouseleave="unDo()" 
+                 onfocus="upDate(this)" onblur="unDo()">
+            <figcaption>The Hobbit</figcaption>
+        </figure>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
