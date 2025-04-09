@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The books I read</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="page.html">Read Books</a>
+        <a href="want-to-read.html">Want to Read</a>
+        <a href="recommended.html">Recommended</a>
+    </nav>
+    <main id="main-content">
+        <h1>Books read</h1>
+        <p>The last 3 books I read</p>
+
+        <!-- Фильтры для книг -->
+        <div class="filters">
+            <button id="filter-all">All</button>
+            <button id="filter-read">Not read in full</button>
+            <button id="filter-recommended">Read in full</button>
+            <button id="filter-to-read">Partially read</button>
+        </div>
+
+        <ul>
+            <li><a href="https://www.litres.ru/book/aleksandr-bek/volokolamskoe-shosse-130798/chitat-onlayn/" target="_blank">Volokolamskoye highway - Alexander Beck</a></li>
+            <li><a href="https://www.litres.ru/book/dzhordzh-oruell/1984-67572948/" target="_blank">1984 - George Orwell</a></li>
+            <li><a href="https://www.litres.ru/book/erih-mariya-remark/na-zapadnom-fronte-bez-peremen-32878920/" target="_blank">On the Western Front Without Change - Erich Maria Remarque</a></li>
+        </ul>
+
+        <div class="book-grid">
+            <section class="book-item read">
+                <h2>Volokolamskoye highway - Alexander Beck</h2>
+                <p>“Volokolamskoye highway” - a novella by Alexander Beck...</p>
+                <img class="book-image" src="https://cdn.litres.ru/pub/c/cover_415/130798.webp" alt="Cover of the book" height="400" width="300">
+            </section>
+            <section class="book-item recommended">
+                <h2>1984 - George Orwell</h2>
+                <p>“1984” — George Orwell's anti-utopian novel...</p>
+                <img class="book-image" src="https://cdn.litres.ru/pub/c/cover_415/67572948.webp" alt="The cover of the book" height="400" width="300">
+            </section>
+            <section class="book-item to-read">
+                <h2>On the Western Front Without Change - Erich Maria Remarque</h2>
+                <p>“On the Western Front Without Change”...</p>
+                <img class="book-image" src="https://cdn.litres.ru/pub/c/cover_415/32878920.webp" alt="The cover of the book" height="400" width="300">
+            </section>
+        </div>
+    </main>
+    <script>
+        // Функция для фильтрации книг по статусу
+        function filterBooks(status) {
+            const allBooks = document.querySelectorAll('.book-item');
+            allBooks.forEach(book => {
+                if (book.classList.contains(status) || status === 'all') {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+
+        // Применяем фильтры
+        document.getElementById('filter-read').addEventListener('click', () => filterBooks('read'));
+        document.getElementById('filter-recommended').addEventListener('click', () => filterBooks('recommended'));
+        document.getElementById('filter-to-read').addEventListener('click', () => filterBooks('to-read'));
+        document.getElementById('filter-all').addEventListener('click', () => filterBooks('all'));
+    </script>
+</body>
+</html>
